@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
+		<title>Polling App</title>
+	</head>
+	<body>
+        <div class="container" style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+            <h2>OS Vote</h2>
+            <p style="font-size:1.4rem">Vote for your ❤️ OS to develop on</p>
+            <form id="vote-form" style="align-self: flex-start;width:100%;display: flex;flex-direction:column;align-items: center;">
+                <div style="display: flex;justify-content: space-between;">
+                    <p style="margin-right:1%">
+                        <label>
+                            <input class="with-gap" type="radio" name="os" id="windows" value="Windows">
+                            <span for="windows">Windows</span>
+                        </label>
+                    <p style="margin-right:5%">
+                        <label>
+                            <input class="with-gap" type="radio" name="os" id="macos" value="MacOS">
+                            <span for="macos">MacOS</span>
+                        </label>
+                    <p style="margin-right:5%">
+                        <label>
+                            <input class="with-gap" type="radio" name="os" id="linux" value="Linux">
+                            <span for="linux">Linux Distro</span>
+                        </label>
+                    </p>
+                    <p style="margin-right:5%">
+                        <label>
+                            <input class="with-gap"  type="radio" name="os" id="other" value="Other">
+                            <span for="other">Something else</span>
+                        </label>
+                    </p>
+                </div>
+                
+                <input type="submit" value="Vote" class="btn" style="margin:auto;">
+            </form>
+
+            <br>
+            <div id="chartContainer" style="height: 300px;width:100%"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.0.0/pusher.min.js" integrity="sha512-9amDj0TDk+ESmh6fq/prkmY7A1tTNaNnTgCQgePRHrw7Z8LxKMrcqWFOt4WWj7MOvLqbLZ5VaXy1ctAMzwmw/g==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+	</body>
+</html>
